@@ -1,5 +1,3 @@
-[STATUS: DRAFT]
-
 # Name: Moderation Of unLinkable Endorsements (MOLE)
 
 ## Description
@@ -202,8 +200,8 @@ or to reference work developed by another entity
 ## Links to the mailing list, draft charter if any (for WG-forming BoF), relevant Internet-Drafts, etc.
 
 - Mailing List: https://www.ietf.org/mailman/listinfo/mole
-- This request: https://github.com/FIXME
-- Draft charter: https://github.com/FIXME
+- This request: https://github.com/Moderation-of-unLinkable-Endorsements/administrivia/blob/main/bof-request.md
+- Draft charter: https://github.com/Moderation-of-unLinkable-Endorsements/administrivia/blob/main/charter.md
 - Relevant Internet-Drafts:
    - All: https://moderation-of-unlinkable-endorsements.github.io/internet-drafts/
    - Architecture: https://moderation-of-unlinkable-endorsements.github.io/internet-drafts/draft-jms-mole-architecture.html

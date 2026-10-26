@@ -55,36 +55,14 @@ Where possible, existing work in other groups, such as Privacy Pass,
 will be adapted to fit the MoLE architecture,
 rather than creating entirely new protocols.
 
+Early versions of this do not need to be safe from forgery
+in the presence of a cryptographically-relevant quantum computer (CRQC).
+All versions must maintain privacy and unlinkability
+that resists a CRQC.
+
 Moreover, the MoLE WG will not specify mechanisms by which trust and reputation
 are established for site visitors.
 The mechanisms it defines will only enable the transfer and management of that information.
-
-## Regarding Post-Quantum Cryptography
-
-Research on post-quantum techniques for anonymous credentials and tokens
-is still relatively nascent,
-with relatively few settled techniques
-that are well-suited to deployment in this context.
-There are techniques that appear to be promising,
-but these are not necessarily as mature as would be desirable for deployment in the short term.
-
-Therefore, the group will initially focus on methods based on classical cryptography,
-such as elliptic curves.
-In doing so, there is a firm requirement
-that a cryptographically-relevant quantum computer (CRQC)
-not threaten the privacy of people who might use the protocol,
-even if it could create forgeries.
-That is, any protocol developed must be PQ-private,
-even if a PQ-forgeable solution is accepted for the first outputs of the working group.
-
-Sites cannot solely rely on MoLE signals
-to discriminate between wanted and unwanted visitors;
-even a strong signal is only one of many potential signals they might use.
-However, this potential weakness means that
-there is a stronger requirement than normal for the group
-to develop a plan for transition to an PQ-unforgeable design.
-This means that the group might choose to actively work on a PQ-unforgeable variant
-in parallel with any classic option.
 
 ## Coordination
 

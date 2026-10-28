@@ -52,10 +52,10 @@ that sites receive to the operators of the services that provide those signals.
 The group will not develop new cryptographic primitives,
 but instead adapt existing work to fit the target architecture.
 Where possible, existing work in other groups, such as Privacy Pass,
-will be adapted to fit the MoLE architecture,
+will be adapted to fit the MOLE architecture,
 rather than creating entirely new protocols.
 
-Moreover, the MoLE WG will not specify mechanisms by which trust and reputation
+Moreover, the MOLE WG will not specify mechanisms by which trust and reputation
 are established for site visitors.
 The mechanisms it defines will only enable the transfer and management of that information.
 
@@ -77,7 +77,7 @@ even if it could create forgeries.
 That is, any protocol developed must be PQ-private,
 even if a PQ-forgeable solution is accepted for the first outputs of the working group.
 
-Sites cannot solely rely on MoLE signals
+Sites cannot solely rely on MOLE signals
 to discriminate between wanted and unwanted visitors;
 even a strong signal is only one of many potential signals they might use.
 However, this potential weakness means that
@@ -88,16 +88,16 @@ in parallel with any classic option.
 
 ## Coordination
 
-The MoLE WG will coordinate closely with:
+The MOLE WG will coordinate closely with:
 
 * the Privacy Pass working group, to ensure alignment of work and avoid duplication;
 
 * the Crypto-Forum Research Group (CFRG) of the IRTF,
-  who are actively documenting primitives that are relevant to the work in MoLE;
+  who are actively documenting primitives that are relevant to the work in MOLE;
 
 * the World Wide Web Consortium (W3C) or WHATWG,
   who might need to take on work to develop Web APIs
-  to access MoLE capabilities in browsers;
+  to access MOLE capabilities in browsers;
 
 * the HTTP working group (HTTPbis),
   in the event that an HTTP-based protocol is developed;
@@ -110,14 +110,14 @@ The MoLE WG will coordinate closely with:
 
 ## Deliverables
 
-The MoLE WG will seek to deliver, to the IESG, documents on:
+The MOLE WG will seek to deliver, to the IESG, documents on:
 
-* MoLE system architecture, its components, and interactions between participants
+* MOLE system architecture, its components, and interactions between participants
 
-* A protocol suite (one or more protocols) for the MoLE architecture
+* A protocol suite (one or more protocols) for the MOLE architecture
   that uses classical cryptographic techniques while being PQ-private
 
-* A mapping of MoLE protocols to HTTP
+* A mapping of MOLE protocols to HTTP
 
 * (Later) Protocol variants that are both PQ-private and PQ-unforgeable
 

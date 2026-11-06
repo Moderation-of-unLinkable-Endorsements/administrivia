@@ -16,15 +16,14 @@ are creating new interaction models
 that create complex demands on anti-abuse decision-making.
 
 The most promising approaches for addressing this problem
-use the reputation that people build up with sites
-they have deeper or longer-lasting relationships with.
+use the existing relationships that people have with sites.
 If other sites could draw on that information,
 that would provide them with high confidence information about new visitors.
 
-Unfortunately, a simplistic implementation of cross-site reputation
+Unfortunately, a simplistic implementation of cross-site information sharing
 is incompatible with the privacy architecture of the web.
 For instance, third-party cookies have been used in the past
-as a basis for sharing reputation information.
+as a basis for sharing information about visitors.
 However, most browsers actively seek to block cross-site cookies
 because they are routinely abused for tracking and profiling.
 
@@ -36,15 +35,16 @@ needs to encourage open participation and resist centralization effects.
 ## Goals
 
 The MOLE WG will develop an architecture and protocols
-that support the sharing and management of site visitor reputation.
+that support the sharing and management of capacity allocations for site visitors.
 This includes a collection of low entropy signals
 regarding visitor behavior that can change over time,
 suitable for the deployment to the web.
-Reputation will take the form of restricted state information
+Capacity metrics that are carried between sites
+will take the form of restricted state information
 (a small number of integer values)
 that can be separately updated and queried.
 
-In addition to protocols for bootstrapping and managing reputation,
+In addition to protocols for bootstrapping the process and managing capacity,
 the MOLE WG will design and incorporate feedback mechanisms.
 Feedback will provide actionable information about the quality of signals
 that sites receive to the operators of the services that provide those signals.
@@ -55,8 +55,9 @@ Where possible, existing work in other groups, such as Privacy Pass,
 will be adapted to fit the MoLE architecture,
 rather than creating entirely new protocols.
 
-Moreover, the MoLE WG will not specify mechanisms by which trust and reputation
-are established for site visitors.
+Moreover, the MoLE WG will not constrain
+how sites decide to create endorsements
+or how they manage capacity.
 The mechanisms it defines will only enable the transfer and management of that information.
 
 ## Regarding Post-Quantum Cryptography

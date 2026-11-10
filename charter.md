@@ -52,7 +52,7 @@ that sites receive to the operators of the services that provide those signals.
 The group will not develop new cryptographic primitives,
 but instead adapt existing work to fit the target architecture.
 Where possible, existing work in other groups, such as Privacy Pass,
-will be adapted to fit the MoLE architecture,
+will be adapted to fit the MOLE architecture,
 rather than creating entirely new protocols.
 
 Early versions of this do not need to be safe from forgery
@@ -60,23 +60,23 @@ in the presence of a cryptographically-relevant quantum computer (CRQC).
 All versions must maintain privacy and unlinkability
 that resists a CRQC.
 
-Moreover, the MoLE WG will not constrain
+Moreover, the MOLE WG will not constrain
 how sites decide to create endorsements
 or how they manage capacity.
 The mechanisms it defines will only enable the transfer and management of that information.
 
 ## Coordination
 
-The MoLE WG will coordinate closely with:
+The MOLE WG will coordinate closely with:
 
 * the Privacy Pass working group, to ensure alignment of work and avoid duplication;
 
 * the Crypto-Forum Research Group (CFRG) of the IRTF,
-  who are actively documenting primitives that are relevant to the work in MoLE;
+  who are actively documenting primitives that are relevant to the work in MOLE;
 
 * the World Wide Web Consortium (W3C) or WHATWG,
   who might need to take on work to develop Web APIs
-  to access MoLE capabilities in browsers;
+  to access MOLE capabilities in browsers;
 
 * the HTTP working group (HTTPbis),
   in the event that an HTTP-based protocol is developed;
@@ -89,14 +89,14 @@ The MoLE WG will coordinate closely with:
 
 ## Deliverables
 
-The MoLE WG will seek to deliver, to the IESG, documents on:
+The MOLE WG will seek to deliver, to the IESG, documents on:
 
-* MoLE system architecture, its components, and interactions between participants
+* MOLE system architecture, its components, and interactions between participants
 
-* A protocol suite (one or more protocols) for the MoLE architecture
+* A protocol suite (one or more protocols) for the MOLE architecture
   that uses classical cryptographic techniques while being PQ-private
 
-* A mapping of MoLE protocols to HTTP
+* A mapping of MOLE protocols to HTTP
 
 * (Later) Protocol variants that are both PQ-private and PQ-unforgeable
 

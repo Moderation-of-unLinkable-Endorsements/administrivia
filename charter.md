@@ -1,66 +1,71 @@
-# Moderation of unLinkable Endorsements (MOLE) Charter
+# Moderation Of unLinkable Endorsements (MOLE) Charter
 
-The tools that websites have to help discriminate between “good” visitors
-and bad ones are quite limited.
-In the past, this means that sites resort to using a range of techniques
-to defend themselves against abusive clients.
-These techniques have proven to be increasingly less ineffective,
-while being annoying and privacy-invasive.
-For example, CAPTCHA is widely recognized as being ineffectual,
-as automated solvers now trivially pass tests that many humans struggle with.
-Websites are increasingly moving to more invasive methods,
-such as asking for identification (email addresses, phone numbers)
-or relying on client fingerprinting in order to curtail abuse.
-In addition to this, agentic and automated clients
-are creating new interaction models
-that create complex demands on anti-abuse decision-making.
+The tools that websites have to help discriminate
+between "good" and "bad" visitors
+are quite limited.
+The techniques sites have historically used to manage abuse
+are increasingly ineffective against sophisticated adversaries.
+At the same time, agentic and automated clients
+are further complicating anti-abuse decision-making.
+
+Though CAPTCHA is known to be ineffective and annoying for visitors,
+it remains in wide use.
+Websites are also turning to privacy-invasive methods,
+like identification (email addresses, phone numbers)
+or relying on client fingerprinting.
 
 The most promising approaches for addressing this problem
 use the existing relationships that people have with sites.
 If other sites could draw on that information,
 that would provide them with high confidence information about new visitors.
 
-Unfortunately, a simplistic implementation of cross-site information sharing
+A simplistic implementation of cross-site information sharing
 is incompatible with the privacy architecture of the web.
-For instance, third-party cookies have been used in the past
-as a basis for sharing information about visitors.
-However, most browsers actively seek to block cross-site cookies
-because they are routinely abused for tracking and profiling.
+While cross-site cookies have been used in the past
+as a basis for sharing information about visitors,
+they are also abused for tracking and profiling.
 
-Deployment to the web requires a system that can provide high confidence signals
-with very low entropy.
+Providing websites with actionable information
+for managing abuse
+requires cross-site signals
+that are simultaneously high confidence and very low entropy.
 At the same time, any system that is deployed to the web
 needs to encourage open participation and resist centralization effects.
 
 ## Goals
 
 The MOLE WG will develop an architecture and protocols
-that support the sharing and management of capacity allocations for site visitors.
-This includes a collection of low entropy signals
-regarding visitor behavior that can change over time,
-suitable for the deployment to the web.
-Capacity metrics that are carried between sites
-will take the form of restricted state information
-(a small number of integer values)
-that can be separately updated and queried.
+that support the distributed rate limiting of access to websites.
+Rate limits will use a "capacity":
+a small number of integer values
+that are carried by clients between sites.
+Sites can update the capacity held by clients
+in response to observed activity
+and make occasional queries
+to confirm that the client holds a valid and acceptable capacity.
 
-In addition to protocols for bootstrapping the process and managing capacity,
-the MOLE WG will design and incorporate feedback mechanisms.
-Feedback will provide actionable information about the quality of signals
-that sites receive to the operators of the services that provide those signals.
+The MOLE WG will develop a mechanism for bootstrapping
+the creation of client capacity
+from a scarce, pre-existing "endorsement" from another site.
 
-The group will not develop new cryptographic primitives,
+The MOLE WG will design privacy-preserving feedback mechanisms
+to provide information to site operators
+about the quality of the information they receive.
+
+## Constraints
+
+The MOLE WG will not develop new cryptographic primitives,
 but instead adapt existing work to fit the target architecture.
-Where possible, existing work in other groups, such as Privacy Pass,
+Where possible, work from other groups, such as Privacy Pass,
 will be adapted to fit the MOLE architecture,
 rather than creating entirely new protocols.
 
-Early versions of this do not need to be safe from forgery
+The first products of the MOLE WG do not need to be safe from forgery
 in the presence of a cryptographically-relevant quantum computer (CRQC).
 All versions must maintain privacy and unlinkability
 that resists a CRQC.
 
-Moreover, the MOLE WG will not constrain
+The MOLE WG will not constrain
 how sites decide to create endorsements
 or how they manage capacity.
 The mechanisms it defines will only enable the transfer and management of that information.
@@ -69,7 +74,8 @@ The mechanisms it defines will only enable the transfer and management of that i
 
 The MOLE WG will coordinate closely with:
 
-* the Privacy Pass working group, to ensure alignment of work and avoid duplication;
+* the Privacy Pass working group,
+  to ensure alignment of work and avoid duplication;
 
 * the Crypto-Forum Research Group (CFRG) of the IRTF,
   who are actively documenting primitives that are relevant to the work in MOLE;
@@ -79,7 +85,7 @@ The MOLE WG will coordinate closely with:
   to access MOLE capabilities in browsers;
 
 * the HTTP working group (HTTPbis),
-  in the event that an HTTP-based protocol is developed;
+  for feedback on HTTP integration;
 
 * the Privacy Preserving Measurement working group (PPM),
   if any feedback mechanisms could benefit from the product of that group; and

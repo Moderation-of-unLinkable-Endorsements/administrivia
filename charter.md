@@ -49,8 +49,8 @@ the creation of client capacity
 from a scarce, pre-existing "endorsement" from another site.
 
 The MOLE WG will design privacy-preserving feedback mechanisms
-to provide information to site operators
-about the quality of the information they receive.
+to provide information to both signal providers and site operators
+about the quality of the information they supply and receive.
 
 ## Constraints
 

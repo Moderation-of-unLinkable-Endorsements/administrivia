@@ -65,14 +65,14 @@ in the presence of a cryptographically-relevant quantum computer (CRQC).
 All versions must maintain privacy and unlinkability
 that resists a CRQC.
 
-The MOLE WG will not constrain
+The MOLE WG will not define policies for
 how sites decide to create endorsements
 or how they manage capacity.
 The mechanisms it defines will only enable the transfer and management of that information.
 
 ## Coordination
 
-The MOLE WG will coordinate closely with:
+The MOLE WG will coordinate with:
 
 * the Privacy Pass working group,
   to ensure alignment of work and avoid duplication;
@@ -95,14 +95,19 @@ The MOLE WG will coordinate closely with:
 
 ## Deliverables
 
-The MOLE WG will seek to deliver, to the IESG, documents on:
+The MOLE WG will produce documents on:
 
-* MOLE system architecture, its components, and interactions between participants
+* System architecture, its components, and interactions between participants
 
-* A protocol suite (one or more protocols) for the MOLE architecture
+* Deployment guidance that describes constraints needed
+  to preserve privacy and openness goals
+  and limit misuse of the system,
+  including what behavior a governance function should constrain, if necessary
+
+* A protocol suite (one or more protocols) for the architecture
   that uses classical cryptographic techniques while being PQ-private
 
-* A mapping of MOLE protocols to HTTP
+* A protocol mapping for HTTP
 
 * (Later) Protocol variants that are both PQ-private and PQ-unforgeable
 

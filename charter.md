@@ -1,7 +1,7 @@
 # Moderation Of unLinkable Endorsements (MOLE) Charter
 
 The tools that websites have to help discriminate
-between "good" and "bad" visitors
+between wanted and unwanted visitors
 are quite limited.
 The techniques sites have historically used to manage abuse
 are increasingly ineffective against sophisticated adversaries.
@@ -11,11 +11,11 @@ are further complicating anti-abuse decision-making.
 Though CAPTCHA is known to be ineffective and annoying for visitors,
 it remains in wide use.
 Websites are also turning to privacy-invasive methods,
-like identification (email addresses, phone numbers)
+like identification (asking for email addresses, phone numbers)
 or relying on client fingerprinting.
 
 The most promising approaches for addressing this problem
-use the existing relationships that people have with sites.
+use the relationships that people have with existing sites and services.
 If other sites could draw on that information,
 that would provide them with high confidence information about new visitors.
 
@@ -35,7 +35,7 @@ needs to encourage open participation and resist centralization effects.
 ## Goals
 
 The MOLE WG will develop an architecture and protocols
-that support the distributed rate limiting of access to websites.
+that support the distributed rate-limiting of access to websites.
 Rate limits will use a "capacity":
 a small number of integer values
 that are carried by clients between sites.
@@ -46,7 +46,7 @@ to confirm that the client holds a valid and acceptable capacity.
 
 The MOLE WG will develop a mechanism for bootstrapping
 the creation of client capacity
-from a scarce, pre-existing "endorsement" from another site.
+from a scarce, pre-existing "endorsement" from another site or service.
 
 The MOLE WG will design privacy-preserving feedback mechanisms
 to provide information to both signal providers and site operators
@@ -66,7 +66,7 @@ All versions must maintain privacy and unlinkability
 that resists a CRQC.
 
 The MOLE WG will not constrain
-how sites decide to create endorsements
+how sites or services decide to create endorsements
 or how they manage capacity.
 The mechanisms it defines will only enable the transfer and management of that information.
 
